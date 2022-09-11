@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./utils/typography";
+
+@layer base {
+  @import "./utils/variables";
+}
+
+body {
+  margin: 0;
+  // font-family: var(--hero-new);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

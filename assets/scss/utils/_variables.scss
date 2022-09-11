@@ -1,0 +1,45 @@
+:root {
+  /** Color
+  * TIP: to convert hex-rgba(viceversa)
+  *      - Highlight color code
+  *      - Press ctrl+shift+c
+  */
+  --color-cream: 231,224,214;       // #e7e0d6
+  --color-tan: 192,180,160;         // #C0B4A0
+  --color-brown: 77,69,69;          // #4D4545
+  --color-grey: 81,83,88;           // #515358
+  --color-black: 20,24,31;          // #14181F
+  --color-pistachio: 193,208,196;   // #C1D0C4
+  --color-green: 103,120,64;        // #677840
+}
+
+/** 
+* NOTE: using this class on a parent component will overide the color values
+* usecases: Can be used to implement themes such as dark-theme, etc...
+*/
+
+// Theme Declarations
+.default {
+  --color-cream: 231,224,214;       // #E7E0D6
+  --color-tan: 192,180,160;         // #C0B4A0
+  --color-brown: 77,69,69;          // #4D4545
+  --color-grey: 81,83,88;           // #515358
+  --color-black: 20,24,31;          // #14181F
+  --color-pistachio: 193,208,196;   // #C1D0C4
+  --color-green: 103,120,64;        // #677840
+}
+
+/* font faces */
+@font-face {
+  font-family: 'Hero new';
+  font-weight: 400;
+  font-style: normal;
+  src: url('~/assets/fonts/Hero-new/Hero-new-regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'windsong';
+  font-weight: 400;
+  font-style: normal;
+  src: local('windsong'), url('~/assets/fonts/WindSong/WindSong-Regular.ttf') format('truetype');
+}

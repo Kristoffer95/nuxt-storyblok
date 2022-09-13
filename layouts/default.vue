@@ -1,14 +1,19 @@
 <script setup>
-  import { useRoute } from 'vue-router';
+  // import { useRoutem } from 'vue-router';
+  import { ref } from 'vue';
 
-  const route = useRoute()
+  const location = ref()
+
+  onMounted(() => {
+    location.value = window.location.host
+  })
 
 </script>
 
 <template>
   
   <pre>
-    {{ route }}
+    {{ location }}
   </pre>
   
   <GlobalHeader />
